@@ -1,0 +1,104 @@
+/* ==========================================================================
+   TOKENS — Ecosistema Herramienta GIS · GAMC
+   Fuente: Manual de Uso de Marca GAMC 2025.
+   No modificar valores de marca sin referencia al manual oficial.
+   ========================================================================== */
+
+:root {
+  /* ---- Color primario (marca) ------------------------------------------ */
+  --purple-900: #26154a; /* fondo base, más oscuro */
+  --purple-800: #341a67; /* marca principal  R52 G26 B103 */
+  --purple-600: #584291; /* marca secundaria R88 G66 B145 */
+  --blue-600: #009ed0;   /* R0 G158 B208 */
+  --blue-400: #47b4d8;   /* R71 G180 B216 */
+  --blue-200: #a8daed;   /* R168 G218 B237 */
+
+  /* ---- Color secundario — SOLO estados/badges, nunca estructural -------- */
+  --state-success: #72ae17; /* verde   R114 G174 B23 */
+  --state-warning: #efbe00; /* ámbar   R239 G190 B0 */
+  --state-orange: #df491f;  /* naranja R223 G73 B31 */
+  --state-danger: #d60035;  /* rojo    R214 G0 B53 */
+
+  --state-success-bg: rgba(114, 174, 23, 0.16);
+  --state-warning-bg: rgba(239, 190, 0, 0.16);
+  --state-orange-bg: rgba(223, 73, 31, 0.16);
+  --state-danger-bg: rgba(214, 0, 53, 0.16);
+
+  /* ---- Superficies (tema claro) -------------------------------------------
+     Base blanca (referencia de estructura: ERP B2B Design Kit). Los "glass-*"
+     conservan su nombre por compatibilidad con los componentes, pero ahora
+     son superficies blancas/lavanda muy suaves en vez de vidrio traslúcido. */
+  --bg-page: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #f5f4fb;
+  --bg-surface-hover: #efedf9;
+
+  --border-subtle: rgba(38, 21, 74, 0.08);
+  --border-default: rgba(38, 21, 74, 0.14);
+  --border-strong: rgba(38, 21, 74, 0.24);
+
+  --glass-fill-strong: var(--bg-surface);
+  --glass-fill: var(--bg-surface);
+  --glass-fill-soft: var(--bg-surface-alt);
+  --glass-border: var(--border-default);
+  --glass-border-soft: var(--border-subtle);
+
+  /* ---- Texto (oscuro sobre claro) ------------------------------------------ */
+  --text-primary: var(--purple-900);
+  --text-secondary: rgba(38, 21, 74, 0.64);
+  --text-muted: rgba(38, 21, 74, 0.44);
+  --text-on-accent: #ffffff;
+  --text-inverse: #ffffff;
+
+  /* ---- Tipografía ----------------------------------------------------------- */
+  --font-body: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-script: "Dancing Script", "Segoe Script", cursive; /* SOLO lockup "yo <3 Cocha" */
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.625rem;
+  --fs-2xl: 2.25rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ---- Radios ------------------------------------------------------------- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  /* ---- Spacing -------------------------------------------------------------- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 56px;
+
+  /* ---- Sombras / desenfoque -------------------------------------------------- */
+  --blur-glass: 18px;
+  --shadow-card: 0 1px 2px rgba(38, 21, 74, 0.05), 0 10px 24px rgba(38, 21, 74, 0.08);
+  --shadow-soft: 0 1px 2px rgba(38, 21, 74, 0.04), 0 4px 12px rgba(38, 21, 74, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(0, 158, 208, 0.28);
+
+  /* ---- Transiciones ------------------------------------------------------------ */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur-fast: 140ms;
+  --dur-base: 220ms;
+
+  /* ---- Layout --------------------------------------------------------------- */
+  --sidebar-width: 260px;
+  --sidebar-width-collapsed: 76px;
+  --topbar-height: 64px;
+  --content-max: 1320px;
+}
